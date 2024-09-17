@@ -3,7 +3,6 @@ const path = require("path");
 const hljs = require("highlight.js/lib/common");
 
 const outputFile = path.join(__dirname, "notion-pages.json");
-const transformedOutput = path.join(__dirname, "content.json");
 
 if (!fs.existsSync(outputFile)) {
   console.error(`File not found: ${outputFile}`);
@@ -11,12 +10,74 @@ if (!fs.existsSync(outputFile)) {
 
 const pages = JSON.parse(fs.readFileSync(outputFile));
 
+function resolveTabs(tabsBlocks) {
+  return tabsBlocks
+    .map((tab) => {
+      if (tab.type !== "callout") return null;
+      return {
+        label: tab.callout.rich_text
+          .map(({ plain_text }) => plain_text)
+          .join(""),
+        text: tab.children[0].paragraph.rich_text
+          .map(({ plain_text }) => plain_text)
+          .join(""),
+      };
+    })
+    .filter(Boolean);
+}
+
+const calloutMap = {
+  tabs: (block) => {
+    return {
+      component: "Tabs",
+      tabs: resolveTabs(block.children),
+    };
+  },
+  code: (block) => {
+    if (!block.children[0].code) {
+      console.log("Code component must be first child of code callout");
+      return null;
+    }
+    const code = block.children[0].code.rich_text
+      .map(({ plain_text }) => plain_text)
+      .join("");
+    // YOU MAY NEED A MAPPER FOR THIS
+    const language = block.children[0].code.language;
+    const highlightedCode = hljs.highlight(code, { language }).value;
+    return {
+      component: "CodeBlock",
+      filename: block.callout.rich_text
+        .map(({ plain_text }) => plain_text)
+        .join(""),
+      code: highlightedCode,
+      language: block.children[0].code.language,
+    };
+  },
+};
+
+function resolveCalloutComponent(block) {
+  if (block.callout?.icon?.type !== "external") {
+    console.log("ICON NOT SUPPORTED:", block.callout.icon);
+    return null;
+  }
+  const iconName = block.callout.icon.external.url
+    .split("/")
+    .pop()
+    .split(".")[0]
+    .split("_")[0];
+  if (!calloutMap[iconName]) {
+    console.log("EXTERNAL ICON NOT SUPPORTED:", iconName);
+    return null;
+  }
+  return calloutMap[iconName](block);
+}
+
 const blockMap = {
-  //   callout: (block) => {
-  //     const result = resolveCalloutComponent(block);
-  //     if (!result) return null;
-  //     return result;
-  //   },
+  callout: (block) => {
+    const result = resolveCalloutComponent(block);
+    if (!result) return null;
+    return result;
+  },
   paragraph: (block) => {
     if (block.paragraph.rich_text.length === 0) return null;
     return {
@@ -24,6 +85,33 @@ const blockMap = {
       text: block.paragraph.rich_text
         .map(({ plain_text }) => plain_text)
         .join(""),
+    };
+  },
+  // code: (block) => {
+  //   // if (!block.children[0].code) {
+  //   //   console.log("Code component must be first child of code callout");
+  //   //   return null;
+  //   // }
+  //   const code = block.children[0].code.rich_text
+  //     .map(({ plain_text }) => plain_text)
+  //     .join("");
+  //   // YOU MAY NEED A MAPPER FOR THIS
+  //   const language = block.children[0].code.language;
+  //   const highlightedCode = hljs.highlight(code, { language }).value;
+  //   return {
+  //     component: "CodeBlock",
+  //     filename: block.callout.rich_text
+  //       .map(({ plain_text }) => plain_text)
+  //       .join(""),
+  //     code: highlightedCode,
+  //     language: block.children[0].code.language,
+  //   };
+  // },
+  heading_1: (block) => {
+    console.log(block)
+    return {
+      component: "Heading1",
+      text: block.heading_1.rich_text[0].plain_text,
     };
   },
 };
@@ -40,14 +128,17 @@ function transformBlocks(blocks) {
 }
 
 let output = pages.map((page) => {
-  const { properties, children, id } = page;
+  const { properties, children, id, created_time } = page;
   return {
     id,
+    createdDate: created_time,
     title: properties.Name.title[0].text.content,
     urlPath: properties.Slug.rich_text[0].plain_text,
+    tags: properties.Tags.multi_select.map(({ name }) => name),
     blocks: transformBlocks(children),
   };
 });
 
+const transformedOutput = path.join(__dirname, "content.json");
 fs.writeFileSync(transformedOutput, JSON.stringify(output, null, 2));
 console.log(`Transformed ${output.length} pages to ${transformedOutput}`);

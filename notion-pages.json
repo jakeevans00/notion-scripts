@@ -3,7 +3,7 @@
     "object": "page",
     "id": "103585bf-0976-80a1-98c8-ece134b9ea2e",
     "created_time": "2024-09-16T19:27:00.000Z",
-    "last_edited_time": "2024-09-16T20:27:00.000Z",
+    "last_edited_time": "2024-09-17T17:27:00.000Z",
     "created_by": {
       "object": "user",
       "id": "fba5bb0f-aaa9-48e3-ab67-c5ff3d5544d6"
@@ -13,7 +13,10 @@
       "id": "fba5bb0f-aaa9-48e3-ab67-c5ff3d5544d6"
     },
     "cover": null,
-    "icon": null,
+    "icon": {
+      "type": "emoji",
+      "emoji": "🎨"
+    },
     "parent": {
       "type": "database_id",
       "database_id": "df301d30-71d5-47e7-9624-dbc29d81fb36"
@@ -24,7 +27,18 @@
       "Tags": {
         "id": "GsN%3B",
         "type": "multi_select",
-        "multi_select": []
+        "multi_select": [
+          {
+            "id": "bd88a02a-51c5-4dce-8a76-7a334f1d08a3",
+            "name": "Frontend",
+            "color": "default"
+          },
+          {
+            "id": "b915e403-ff0e-4c4d-91b6-d2545260c4b7",
+            "name": "Notes",
+            "color": "brown"
+          }
+        ]
       },
       "Slug": {
         "id": "U%3DCk",
@@ -33,7 +47,7 @@
           {
             "type": "text",
             "text": {
-              "content": "react-notes",
+              "content": "react",
               "link": null
             },
             "annotations": {
@@ -44,7 +58,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "react-notes",
+            "plain_text": "react",
             "href": null
           }
         ]
@@ -1008,7 +1022,7 @@
           "page_id": "103585bf-0976-80a1-98c8-ece134b9ea2e"
         },
         "created_time": "2024-09-16T19:41:00.000Z",
-        "last_edited_time": "2024-09-16T19:42:00.000Z",
+        "last_edited_time": "2024-09-17T17:27:00.000Z",
         "created_by": {
           "object": "user",
           "id": "fba5bb0f-aaa9-48e3-ab67-c5ff3d5544d6"
@@ -1042,8 +1056,10 @@
             }
           ],
           "icon": {
-            "type": "emoji",
-            "emoji": "💡"
+            "type": "external",
+            "external": {
+              "url": "https://www.notion.so/icons/document_blue.svg"
+            }
           },
           "color": "default_background"
         },
@@ -1261,120 +1277,9 @@
   },
   {
     "object": "page",
-    "id": "3f455d98-bb4a-4145-854c-4bbe3193b45a",
-    "created_time": "2024-09-16T16:29:00.000Z",
-    "last_edited_time": "2024-09-16T20:27:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "fba5bb0f-aaa9-48e3-ab67-c5ff3d5544d6"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "fba5bb0f-aaa9-48e3-ab67-c5ff3d5544d6"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "df301d30-71d5-47e7-9624-dbc29d81fb36"
-    },
-    "archived": false,
-    "in_trash": false,
-    "properties": {
-      "Tags": {
-        "id": "GsN%3B",
-        "type": "multi_select",
-        "multi_select": []
-      },
-      "Slug": {
-        "id": "U%3DCk",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "page2",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "page2",
-            "href": null
-          }
-        ]
-      },
-      "Created Date": {
-        "id": "rtR%3A",
-        "type": "date",
-        "date": null
-      },
-      "Name": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Page 2",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Page 2",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/Page-2-3f455d98bb4a4145854c4bbe3193b45a",
-    "public_url": null,
-    "children": [
-      {
-        "object": "block",
-        "id": "acdeed8d-90c7-406b-bf6c-356753e72162",
-        "parent": {
-          "type": "page_id",
-          "page_id": "3f455d98-bb4a-4145-854c-4bbe3193b45a"
-        },
-        "created_time": "2024-09-16T17:42:00.000Z",
-        "last_edited_time": "2024-09-16T17:42:00.000Z",
-        "created_by": {
-          "object": "user",
-          "id": "fba5bb0f-aaa9-48e3-ab67-c5ff3d5544d6"
-        },
-        "last_edited_by": {
-          "object": "user",
-          "id": "fba5bb0f-aaa9-48e3-ab67-c5ff3d5544d6"
-        },
-        "has_children": false,
-        "archived": false,
-        "in_trash": false,
-        "type": "paragraph",
-        "paragraph": {
-          "rich_text": [],
-          "color": "default"
-        },
-        "children": []
-      }
-    ]
-  },
-  {
-    "object": "page",
     "id": "b256f263-bdda-4a33-90b0-5d9ca64d6f34",
     "created_time": "2024-09-16T16:29:00.000Z",
-    "last_edited_time": "2024-09-16T17:43:00.000Z",
+    "last_edited_time": "2024-09-17T17:26:00.000Z",
     "created_by": {
       "object": "user",
       "id": "fba5bb0f-aaa9-48e3-ab67-c5ff3d5544d6"
@@ -1384,7 +1289,10 @@
       "id": "fba5bb0f-aaa9-48e3-ab67-c5ff3d5544d6"
     },
     "cover": null,
-    "icon": null,
+    "icon": {
+      "type": "emoji",
+      "emoji": "🧑🏽‍💻"
+    },
     "parent": {
       "type": "database_id",
       "database_id": "df301d30-71d5-47e7-9624-dbc29d81fb36"
@@ -1405,6 +1313,11 @@
             "id": "1ca1fe8b-59f8-4708-8187-5246a07ee4ad",
             "name": "Notion",
             "color": "pink"
+          },
+          {
+            "id": "54df8e3e-4d0b-4669-a3e1-e711746d90a2",
+            "name": "Tutorial",
+            "color": "blue"
           }
         ]
       },
@@ -1447,7 +1360,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Test Page",
+              "content": "Notion as a CMS",
               "link": null
             },
             "annotations": {
@@ -1458,13 +1371,13 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Test Page",
+            "plain_text": "Notion as a CMS",
             "href": null
           }
         ]
       }
     },
-    "url": "https://www.notion.so/Test-Page-b256f263bdda4a3390b05d9ca64d6f34",
+    "url": "https://www.notion.so/Notion-as-a-CMS-b256f263bdda4a3390b05d9ca64d6f34",
     "public_url": null,
     "children": [
       {
@@ -1475,7 +1388,7 @@
           "page_id": "b256f263-bdda-4a33-90b0-5d9ca64d6f34"
         },
         "created_time": "2024-09-16T16:33:00.000Z",
-        "last_edited_time": "2024-09-16T16:33:00.000Z",
+        "last_edited_time": "2024-09-17T17:22:00.000Z",
         "created_by": {
           "object": "user",
           "id": "fba5bb0f-aaa9-48e3-ab67-c5ff3d5544d6"
@@ -1493,7 +1406,7 @@
             {
               "type": "text",
               "text": {
-                "content": "Using Notion as a CMS",
+                "content": "Overview",
                 "link": null
               },
               "annotations": {
@@ -1504,7 +1417,7 @@
                 "code": false,
                 "color": "default"
               },
-              "plain_text": "Using Notion as a CMS",
+              "plain_text": "Overview",
               "href": null
             }
           ],
@@ -1560,13 +1473,13 @@
       },
       {
         "object": "block",
-        "id": "31da45b2-3a39-4858-b161-e2b0dba27738",
+        "id": "104585bf-0976-8075-9934-d2e152af1ebc",
         "parent": {
           "type": "page_id",
           "page_id": "b256f263-bdda-4a33-90b0-5d9ca64d6f34"
         },
-        "created_time": "2024-09-16T17:42:00.000Z",
-        "last_edited_time": "2024-09-16T17:43:00.000Z",
+        "created_time": "2024-09-17T17:23:00.000Z",
+        "last_edited_time": "2024-09-17T17:23:00.000Z",
         "created_by": {
           "object": "user",
           "id": "fba5bb0f-aaa9-48e3-ab67-c5ff3d5544d6"
@@ -1578,29 +1491,41 @@
         "has_children": false,
         "archived": false,
         "in_trash": false,
-        "type": "code",
-        "code": {
-          "caption": [],
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "code block bro",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "code block bro",
-              "href": null
-            }
-          ],
-          "language": "javascript"
+        "type": "callout",
+        "callout": {
+          "rich_text": [],
+          "icon": {
+            "type": "emoji",
+            "emoji": "💡"
+          },
+          "color": "gray_background"
+        },
+        "children": []
+      },
+      {
+        "object": "block",
+        "id": "104585bf-0976-80ab-9ec9-fece6e2e0c44",
+        "parent": {
+          "type": "page_id",
+          "page_id": "b256f263-bdda-4a33-90b0-5d9ca64d6f34"
+        },
+        "created_time": "2024-09-17T17:23:00.000Z",
+        "last_edited_time": "2024-09-17T17:23:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "fba5bb0f-aaa9-48e3-ab67-c5ff3d5544d6"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "fba5bb0f-aaa9-48e3-ab67-c5ff3d5544d6"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "paragraph",
+        "paragraph": {
+          "rich_text": [],
+          "color": "default"
         },
         "children": []
       }
