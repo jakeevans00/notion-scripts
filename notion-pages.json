@@ -3,7 +3,7 @@
     "object": "page",
     "id": "103585bf-0976-80a1-98c8-ece134b9ea2e",
     "created_time": "2024-09-16T19:27:00.000Z",
-    "last_edited_time": "2024-09-17T17:27:00.000Z",
+    "last_edited_time": "2024-09-17T19:33:00.000Z",
     "created_by": {
       "object": "user",
       "id": "fba5bb0f-aaa9-48e3-ab67-c5ff3d5544d6"
@@ -24,6 +24,34 @@
     "archived": false,
     "in_trash": false,
     "properties": {
+      "Published": {
+        "id": "%3ElR_",
+        "type": "checkbox",
+        "checkbox": false
+      },
+      "Description": {
+        "id": "EAZO",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "My notes on React. Mostly for my own reference",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "My notes on React. Mostly for my own reference",
+            "href": null
+          }
+        ]
+      },
       "Tags": {
         "id": "GsN%3B",
         "type": "multi_select",
@@ -66,7 +94,11 @@
       "Created Date": {
         "id": "rtR%3A",
         "type": "date",
-        "date": null
+        "date": {
+          "start": "2024-09-17",
+          "end": null,
+          "time_zone": null
+        }
       },
       "Name": {
         "id": "title",
@@ -1279,7 +1311,7 @@
     "object": "page",
     "id": "b256f263-bdda-4a33-90b0-5d9ca64d6f34",
     "created_time": "2024-09-16T16:29:00.000Z",
-    "last_edited_time": "2024-09-17T17:26:00.000Z",
+    "last_edited_time": "2024-09-17T19:33:00.000Z",
     "created_by": {
       "object": "user",
       "id": "fba5bb0f-aaa9-48e3-ab67-c5ff3d5544d6"
@@ -1300,6 +1332,34 @@
     "archived": false,
     "in_trash": false,
     "properties": {
+      "Published": {
+        "id": "%3ElR_",
+        "type": "checkbox",
+        "checkbox": false
+      },
+      "Description": {
+        "id": "EAZO",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Using Notion as my content source for external applications",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Using Notion as my content source for external applications",
+            "href": null
+          }
+        ]
+      },
       "Tags": {
         "id": "GsN%3B",
         "type": "multi_select",

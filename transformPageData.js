@@ -87,31 +87,49 @@ const blockMap = {
         .join(""),
     };
   },
-  // code: (block) => {
-  //   // if (!block.children[0].code) {
-  //   //   console.log("Code component must be first child of code callout");
-  //   //   return null;
-  //   // }
-  //   const code = block.children[0].code.rich_text
-  //     .map(({ plain_text }) => plain_text)
-  //     .join("");
-  //   // YOU MAY NEED A MAPPER FOR THIS
-  //   const language = block.children[0].code.language;
-  //   const highlightedCode = hljs.highlight(code, { language }).value;
-  //   return {
-  //     component: "CodeBlock",
-  //     filename: block.callout.rich_text
-  //       .map(({ plain_text }) => plain_text)
-  //       .join(""),
-  //     code: highlightedCode,
-  //     language: block.children[0].code.language,
-  //   };
-  // },
+  code: (block) => {
+    console.log(block);
+    // if (!block.children[0].code) {
+    //   console.log("Code component must be first child of code callout");
+    //   return null;
+    // }
+    const code = block.code.rich_text
+      .map(({ plain_text }) => plain_text)
+      .join("");
+    // YOU MAY NEED A MAPPER FOR THIS
+    const language = block.children[0].code.language;
+    const highlightedCode = hljs.highlight(code, { language }).value;
+    return {
+      component: "CodeBlock",
+      filename: block.callout.rich_text
+        .map(({ plain_text }) => plain_text)
+        .join(""),
+      code: highlightedCode,
+      language: block.children[0].code.language,
+    };
+  },
   heading_1: (block) => {
-    console.log(block)
     return {
       component: "Heading1",
       text: block.heading_1.rich_text[0].plain_text,
+    };
+  },
+  heading_2: (block) => {
+    return {
+      component: "Heading2",
+      text: block.heading_2.rich_text[0].plain_text,
+    };
+  },
+  heading_3: (block) => {
+    return {
+      component: "Heading3",
+      text: block.heading_3.rich_text[0].plain_text,
+    };
+  },
+  bulleted_list_item: (block) => {
+    return {
+      component: "BulletedListItem",
+      text: block.bulleted_list_item.rich_text[0].plain_text,
     };
   },
 };
@@ -128,11 +146,13 @@ function transformBlocks(blocks) {
 }
 
 let output = pages.map((page) => {
-  const { properties, children, id, created_time } = page;
+  const { properties, children, id, created_time, icon } = page;
   return {
     id,
     createdDate: created_time,
+    icon: icon.emoji,
     title: properties.Name.title[0].text.content,
+    description: properties.Description.rich_text[0].plain_text,
     urlPath: properties.Slug.rich_text[0].plain_text,
     tags: properties.Tags.multi_select.map(({ name }) => name),
     blocks: transformBlocks(children),
