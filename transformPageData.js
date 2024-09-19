@@ -97,15 +97,12 @@ const blockMap = {
       .map(({ plain_text }) => plain_text)
       .join("");
     // YOU MAY NEED A MAPPER FOR THIS
-    const language = block.children[0].code.language;
+    const language = block.code.language;
     const highlightedCode = hljs.highlight(code, { language }).value;
     return {
       component: "CodeBlock",
-      filename: block.callout.rich_text
-        .map(({ plain_text }) => plain_text)
-        .join(""),
       code: highlightedCode,
-      language: block.children[0].code.language,
+      language: block.code.language,
     };
   },
   heading_1: (block) => {

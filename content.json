@@ -40,6 +40,11 @@
         "text": "Hooks"
       },
       {
+        "component": "CodeBlock",
+        "code": "<span class=\"hljs-title function_\">useEffect</span>(<span class=\"hljs-function\">() =&gt;</span> {\n\t<span class=\"hljs-title function_\">loadMoreItems</span>();\n\t},[]);",
+        "language": "javascript"
+      },
+      {
         "component": "Paragraph",
         "text": "useEffect "
       },
