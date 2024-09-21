@@ -6,10 +6,7 @@
     "title": "The First Note",
     "description": "First post & about this blog",
     "urlPath": "first-note",
-    "tags": [
-      "Blog",
-      "Rambles"
-    ],
+    "tags": ["Blog", "Rambles"],
     "blocks": [
       {
         "component": "Paragraph",
@@ -64,11 +61,7 @@
     "title": "Oracle’s Netsuite: 2 Months of Shameless, Self-Guided Reverse Engineering",
     "description": "My thoughts and takeaways from working in Oracle’s Netsuite ERP",
     "urlPath": "netsuite-first-impressions",
-    "tags": [
-      "Javascript",
-      "API",
-      "Review"
-    ],
+    "tags": ["Javascript", "API", "Review"],
     "blocks": [
       {
         "component": "Heading1",
@@ -147,11 +140,7 @@
     "title": "Receiving Email through EmailJS",
     "description": "What I learned from using EmailJS in my project. How to do it and when you shouldn’t",
     "urlPath": "emailjs",
-    "tags": [
-      "API",
-      "Fullstack",
-      "Tutorial"
-    ],
+    "tags": ["API", "Fullstack", "Tutorial"],
     "blocks": [
       {
         "component": "Heading1",
@@ -274,11 +263,7 @@
     "title": "Notion as a CMS",
     "description": "Using Notion as my content source for external applications",
     "urlPath": "notion-blog",
-    "tags": [
-      "API",
-      "Notion",
-      "Tutorial"
-    ],
+    "tags": ["API", "Notion", "Tutorial"],
     "blocks": [
       {
         "component": "Paragraph",
