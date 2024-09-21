@@ -28,10 +28,10 @@ async function main() {
         process.exit(1);
     }
     const notion = new client_1.Client({ auth: process.env.NOTION_API_KEY });
-    const fetcher = new fetcher_1.NotionDatabaseFetcher(notion);
-    await fetcher.setDatabaseIdFromQuery(query);
-    const pages = await fetcher.fetchDatabasePages();
-    await fetcher.saveToFile(pages);
+    // const fetcher = new NotionDatabaseFetcher(notion);
+    // await fetcher.setDatabaseIdFromQuery(query);
+    // const pages = await fetcher.fetchDatabasePages();
+    // await fetcher.saveToFile(pages);
     const transformer = new transformer_1.NotionPageTransformer(inputFile);
     await transformer.loadPages();
     await transformer.saveTransformedPages(outputFile);

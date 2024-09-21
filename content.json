@@ -1,67 +1,16 @@
 [
   {
-    "id": "0abe1081-424e-420b-bf3e-e9d2b3ac6cea",
-    "dateCreated": "2024-09-14",
-    "icon": "🗒️",
-    "title": "The First Note",
-    "description": "First post & about this blog",
-    "urlPath": "first-note",
-    "tags": ["Blog", "Rambles"],
-    "blocks": [
-      {
-        "component": "Paragraph",
-        "text": "Taravangian is probably my favorite character of all time."
-      },
-      {
-        "component": "Paragraph",
-        "text": "For those (*cough plebs) who don’t know, he exists in the Cosmere - Brandon Sanderson’s universe - and suffers from a novel, yet oddly relatable, curse. "
-      },
-      {
-        "component": "Paragraph",
-        "text": "Simply put, he is blessed with capacity. Capacity for overwhelming intelligence or boundless compassion, but never both simultaneously. And here’s the rub - each day of his life he is dealt a different hand. His intelligence varies wildly from absent on one day to transcendant, even god-like, on another."
-      },
-      {
-        "component": "Paragraph",
-        "text": "When I call this relatable, I am not implying that I’m a genius. But I do feel like my own intelligence, on any given day, lies somewhere on a frustratingly wide spectrum. Some days I feel brilliant, bold, and confident in the connections my mind forms. Other days, I feel a latency to my thoughts that annoys me to no end. I hate that feeling, that I can’t articulate my thoughts or succinctly answer someone’s questions."
-      },
-      {
-        "component": "Paragraph",
-        "text": "Which brings me here, to my purpose in writing “notes” for a hypothetically wider audience. Because writing refines thinking, and I think we all could use a little work at that."
-      },
-      {
-        "component": "Heading3",
-        "text": "My Purpose in Writing a Blog"
-      },
-      {
-        "component": "NumberedListItem",
-        "text": "Teaching. A profession which sadly garners less respect than it is due. But a skill that underpins every successful sales rep, CEO, or software team lead. In my job and general life, I don’t get too many opportunities to strengthen this skillset. I hope my pseudo-blog can address that shortcoming. "
-      },
-      {
-        "component": "NumberedListItem",
-        "text": "Technical communication. A subset of teaching that distinguishes Fireship and the Primeagen from the average dev. One of my goals this year is to become more technically articulate. The ability to describe tools, techniques, and technologies at any level of abstraction is invaluable at the interview table and every step beyond."
-      },
-      {
-        "component": "NumberedListItem",
-        "text": "Learning. The scourge of modern web development is the amount of abstraction supporting most frameworks. Before you go crazy thinking I only regurgitate the thoughts of those smarter than me, let me say that I - as a junior dev - am uniquely qualified to express this idea. Because of the abstraction, most newer programmers deify the code inside their node_modules folder 🙏. The wrappers, decorators, props, dependencies, and type declarations fill them simultaneously with wonder and imposter syndrome. Surely, they could never write code like this. I won’t sugercoat it… most often, their code is miles beyond what your paltry GitHub offerings might be. I know they exceed my own. But until we take the learn to truly understand how things work, we will live in fear. I hope that by posting my methods here, I will feel pressured to dive a little deeper and answer the questions that could otherwise be brushed off. It works doesn’t it?"
-      },
-      {
-        "component": "NumberedListItem",
-        "text": "Legitimacy. I’ve built plenty of apps now. Written a lot of 💩 code. Solved plenty of real-world business problems through my job. Not claiming to be na, but I suspect that I’ll never even feel competent if I don’t monitor my progress. My final goal in posting here is that I can observe the problems I have understood — and solved — and believe in myself through the precedent I have set."
-      },
-      {
-        "component": "Paragraph",
-        "text": "And that’s it! If you read this, awesome 😂"
-      }
-    ]
-  },
-  {
     "id": "107585bf-0976-80be-bd03-fc6fd27a95d2",
     "dateCreated": "2024-09-19",
     "icon": "📜",
     "title": "Oracle’s Netsuite: 2 Months of Shameless, Self-Guided Reverse Engineering",
     "description": "My thoughts and takeaways from working in Oracle’s Netsuite ERP",
     "urlPath": "netsuite-first-impressions",
-    "tags": ["Javascript", "API", "Review"],
+    "tags": [
+      "Javascript",
+      "API",
+      "Review"
+    ],
     "blocks": [
       {
         "component": "Heading1",
@@ -140,7 +89,11 @@
     "title": "Receiving Email through EmailJS",
     "description": "What I learned from using EmailJS in my project. How to do it and when you shouldn’t",
     "urlPath": "emailjs",
-    "tags": ["API", "Fullstack", "Tutorial"],
+    "tags": [
+      "API",
+      "Fullstack",
+      "Tutorial"
+    ],
     "blocks": [
       {
         "component": "Heading1",
@@ -263,7 +216,11 @@
     "title": "Notion as a CMS",
     "description": "Using Notion as my content source for external applications",
     "urlPath": "notion-blog",
-    "tags": ["API", "Notion", "Tutorial"],
+    "tags": [
+      "API",
+      "Notion",
+      "Tutorial"
+    ],
     "blocks": [
       {
         "component": "Paragraph",
@@ -320,7 +277,7 @@
       {
         "component": "Image",
         "text": "",
-        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/db3adc64-2954-4f92-817f-4c257437946a/36faf469-4e4d-41fa-9f05-cbeb093da661/Screenshot_2024-09-20_at_5.08.01_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240921%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240921T090804Z&X-Amz-Expires=3600&X-Amz-Signature=4fa3a6fd63fba59252daff5340f5cda149b3e17c262b62f680a4464049831775&X-Amz-SignedHeaders=host&x-id=GetObject"
+        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/db3adc64-2954-4f92-817f-4c257437946a/36faf469-4e4d-41fa-9f05-cbeb093da661/Screenshot_2024-09-20_at_5.08.01_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240921%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240921T091419Z&X-Amz-Expires=3600&X-Amz-Signature=97636cf9162f05ed7b3b9da3c711c75e1e5ab1c4573b1db93e66a2bbd7cfd246&X-Amz-SignedHeaders=host&x-id=GetObject"
       },
       {
         "component": "NumberedListItem",
@@ -329,7 +286,7 @@
       {
         "component": "Image",
         "text": "",
-        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/db3adc64-2954-4f92-817f-4c257437946a/d18ae39b-aa7e-4200-b1bc-4fe4706b25c9/Screenshot_2024-09-20_at_5.09.40_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240921%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240921T090804Z&X-Amz-Expires=3600&X-Amz-Signature=8a7b7e26946058eb83fda92e5489773351cbe717e7be85700e9f2a3465422222&X-Amz-SignedHeaders=host&x-id=GetObject"
+        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/db3adc64-2954-4f92-817f-4c257437946a/d18ae39b-aa7e-4200-b1bc-4fe4706b25c9/Screenshot_2024-09-20_at_5.09.40_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240921%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240921T091419Z&X-Amz-Expires=3600&X-Amz-Signature=8fc2ccee86653ae2ccd9dd0f31bac20f5b7444dafe70ee54aab0684cd74739ed&X-Amz-SignedHeaders=host&x-id=GetObject"
       },
       {
         "component": "NumberedListItem",
@@ -406,6 +363,64 @@
       {
         "component": "Paragraph",
         "text": "https://github.com/jakeevans00/notion-scripts"
+      }
+    ]
+  },
+  {
+    "id": "0abe1081-424e-420b-bf3e-e9d2b3ac6cea",
+    "dateCreated": "2024-09-14",
+    "icon": "🗒️",
+    "title": "The First Note",
+    "description": "First post & about this blog",
+    "urlPath": "first-note",
+    "tags": [
+      "Blog",
+      "Rambles"
+    ],
+    "blocks": [
+      {
+        "component": "Paragraph",
+        "text": "Taravangian is probably my favorite character of all time."
+      },
+      {
+        "component": "Paragraph",
+        "text": "For those (*cough plebs) who don’t know, he exists in the Cosmere - Brandon Sanderson’s universe - and suffers from a novel, yet oddly relatable, curse. "
+      },
+      {
+        "component": "Paragraph",
+        "text": "Simply put, he is blessed with capacity. Capacity for overwhelming intelligence or boundless compassion, but never both simultaneously. And here’s the rub - each day of his life he is dealt a different hand. His intelligence varies wildly from absent on one day to transcendant, even god-like, on another."
+      },
+      {
+        "component": "Paragraph",
+        "text": "When I call this relatable, I am not implying that I’m a genius. But I do feel like my own intelligence, on any given day, lies somewhere on a frustratingly wide spectrum. Some days I feel brilliant, bold, and confident in the connections my mind forms. Other days, I feel a latency to my thoughts that annoys me to no end. I hate that feeling, that I can’t articulate my thoughts or succinctly answer someone’s questions."
+      },
+      {
+        "component": "Paragraph",
+        "text": "Which brings me here, to my purpose in writing “notes” for a hypothetically wider audience. Because writing refines thinking, and I think we all could use a little work at that."
+      },
+      {
+        "component": "Heading3",
+        "text": "My Purpose in Writing a Blog"
+      },
+      {
+        "component": "NumberedListItem",
+        "text": "Teaching. A profession which sadly garners less respect than it is due. But a skill that underpins every successful sales rep, CEO, or software team lead. In my job and general life, I don’t get too many opportunities to strengthen this skillset. I hope my pseudo-blog can address that shortcoming. "
+      },
+      {
+        "component": "NumberedListItem",
+        "text": "Technical communication. A subset of teaching that distinguishes Fireship and the Primeagen from the average dev. One of my goals this year is to become more technically articulate. The ability to describe tools, techniques, and technologies at any level of abstraction is invaluable at the interview table and every step beyond."
+      },
+      {
+        "component": "NumberedListItem",
+        "text": "Learning. The scourge of modern web development is the amount of abstraction supporting most frameworks. Before you go crazy thinking I only regurgitate the thoughts of those smarter than me, let me say that I - as a junior dev - am uniquely qualified to express this idea. Because of the abstraction, most newer programmers deify the code inside their node_modules folder 🙏. The wrappers, decorators, props, dependencies, and type declarations fill them simultaneously with wonder and imposter syndrome. Surely, they could never write code like this. I won’t sugercoat it… most often, their code is miles beyond what your paltry GitHub offerings might be. I know they exceed my own. But until we take the learn to truly understand how things work, we will live in fear. I hope that by posting my methods here, I will feel pressured to dive a little deeper and answer the questions that could otherwise be brushed off. It works doesn’t it?"
+      },
+      {
+        "component": "NumberedListItem",
+        "text": "Legitimacy. I’ve built plenty of apps now. Written a lot of 💩 code. Solved plenty of real-world business problems through my job. Not claiming to be na, but I suspect that I’ll never even feel competent if I don’t monitor my progress. My final goal in posting here is that I can observe the problems I have understood — and solved — and believe in myself through the precedent I have set."
+      },
+      {
+        "component": "Paragraph",
+        "text": "And that’s it! If you read this, awesome 😂"
       }
     ]
   }

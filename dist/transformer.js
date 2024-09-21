@@ -57,7 +57,6 @@ class NotionPageTransformer {
     transformBlocks(blocks) {
         return blocks
             .map((block) => {
-            console.log(block.type);
             const blockHandler = this.blockMap[block.type];
             if (blockHandler) {
                 return blockHandler(block);
@@ -84,7 +83,8 @@ class NotionPageTransformer {
     }
     async saveTransformedPages(outputFile) {
         const transformedPages = this.transformPages();
-        await promises_1.default.writeFile(outputFile, JSON.stringify(transformedPages, null, 2));
+        const sortedPages = transformedPages.sort((a, b) => new Date(b.dateCreated).getTime() - new Date(a.dateCreated).getTime());
+        await promises_1.default.writeFile(outputFile, JSON.stringify(sortedPages, null, 2));
         console.log(`Transformed ${transformedPages.length} pages to ${outputFile}`);
     }
     calloutMap = {
@@ -157,7 +157,6 @@ class NotionPageTransformer {
             }
             : null,
         image: (block) => {
-            console.log("in image", block.image.file.url);
             return {
                 component: "Image",
                 text: "",

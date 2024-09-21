@@ -125,7 +125,11 @@ export class NotionPageTransformer {
 
   async saveTransformedPages(outputFile: string): Promise<void> {
     const transformedPages = this.transformPages();
-    await fs.writeFile(outputFile, JSON.stringify(transformedPages, null, 2));
+    const sortedPages = transformedPages.sort(
+      (a, b) =>
+        new Date(b.dateCreated).getTime() - new Date(a.dateCreated).getTime()
+    );
+    await fs.writeFile(outputFile, JSON.stringify(sortedPages, null, 2));
     console.log(
       `Transformed ${transformedPages.length} pages to ${outputFile}`
     );
