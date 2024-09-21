@@ -4,13 +4,19 @@
   "description": "Scripts to interact with Notion API",
   "main": "getDatabaseId.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "node dist/index.js Portfolio"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@notionhq/client": "^2.2.15",
+    "@types/node": "^22.5.5",
     "dotenv": "^16.4.5",
     "highlight.js": "^11.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2"
   }
 }

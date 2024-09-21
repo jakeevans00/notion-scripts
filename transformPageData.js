@@ -89,23 +89,20 @@ const blockMap = {
   },
   code: (block) => {
     console.log(block);
-    // if (!block.children[0].code) {
-    //   console.log("Code component must be first child of code callout");
-    //   return null;
-    // }
+
     const code = block.code.rich_text
       .map(({ plain_text }) => plain_text)
       .join("");
-    // YOU MAY NEED A MAPPER FOR THIS
-    const language = block.children[0].code.language;
-    const highlightedCode = hljs.highlight(code, { language }).value;
+    console.log(code);
+    const language = block.code.language;
+    const highlightedCode = hljs.highlight(code, {
+      langugage: "js",
+    }).value;
+    console.log(highlightedCode);
     return {
       component: "CodeBlock",
-      filename: block.callout.rich_text
-        .map(({ plain_text }) => plain_text)
-        .join(""),
       code: highlightedCode,
-      language: block.children[0].code.language,
+      language: language,
     };
   },
   heading_1: (block) => {
